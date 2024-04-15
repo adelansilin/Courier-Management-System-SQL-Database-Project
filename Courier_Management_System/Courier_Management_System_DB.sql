@@ -346,7 +346,7 @@ FROM
         JOIN
     payment p ON c.CourierID = p.CourierID
 WHERE
-    c.DeliveryDate = '2024-04-24';
+    c.Status = 'out for delivery';
 
 -- 8. List all packages with a specific status: 
 SELECT 
